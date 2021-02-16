@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		823A86AF25746421000758DF /* BittrexServiceApiV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A86AE25746421000758DF /* BittrexServiceApiV3.swift */; };
+		8241389C2556E97E006C38C8 /* FavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241389B2556E97E006C38C8 /* FavoriteRepository.swift */; };
+		824C0053255AFD8400706413 /* FiatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824C0052255AFD8400706413 /* FiatService.swift */; };
+		82F6343C257EA09300B3F61B /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82333B112552C559006D9BE9 /* CoinListView.swift */; };
+		82F6343D257EA09300B3F61B /* TrextrackerWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CA1EE254F91950061FB88 /* TrextrackerWatchApp.swift */; };
+		82F6343E257EA09300B3F61B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CA1F0254F91950061FB88 /* ContentView.swift */; };
+		82F63440257EA09300B3F61B /* BitcoinPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDA812E256EFD3B0087071E /* BitcoinPriceView.swift */; };
+		AB1CA1DE254F91920061FB88 /* TrextrackerWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AB1CA1DD254F91920061FB88 /* TrextrackerWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AB1CA1E3254F91950061FB88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1CA1E2254F91950061FB88 /* Assets.xcassets */; };
+		AB1CA1EA254F91950061FB88 /* TrextrackerWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB1CA1E9254F91950061FB88 /* TrextrackerWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AB1CA1F3254F91950061FB88 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CA1F2254F91950061FB88 /* NotificationController.swift */; };
+		AB1CA1F5254F91950061FB88 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CA1F4254F91950061FB88 /* NotificationView.swift */; };
+		AB1CA1F7254F91950061FB88 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CA1F6254F91950061FB88 /* ComplicationController.swift */; };
+		AB1CA1F9254F91960061FB88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1CA1F8254F91960061FB88 /* Assets.xcassets */; };
+		AB1CA1FC254F91960061FB88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1CA1FB254F91960061FB88 /* Preview Assets.xcassets */; };
+		AB1CA213254F9D600061FB88 /* BittrexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CA212254F9D600061FB88 /* BittrexService.swift */; };
+		AB1CA21B254FAA8C0061FB88 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CA21A254FAA8C0061FB88 /* Double+Extensions.swift */; };
+		AB1CA22025502B760061FB88 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CA21F25502B760061FB88 /* Date+Extensions.swift */; };
+		AB2AFEED2561A1AB004A4A74 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2AFEEC2561A1AB004A4A74 /* SettingsView.swift */; };
+		ABDA812A256C01E70087071E /* PageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDA8129256C01E70087071E /* PageManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB1CA1DF254F91920061FB88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB1CA1D3254F91920061FB88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB1CA1DC254F91920061FB88;
+			remoteInfo = "TrextrackerWatch WatchKit App";
+		};
+		AB1CA1EB254F91950061FB88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB1CA1D3254F91920061FB88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB1CA1E8254F91950061FB88;
+			remoteInfo = "TrextrackerWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB1CA204254F91960061FB88 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AB1CA1EA254F91950061FB88 /* TrextrackerWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1CA208254F91960061FB88 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AB1CA1DE254F91920061FB88 /* TrextrackerWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		82333B112552C559006D9BE9 /* CoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
+		823A86AE25746421000758DF /* BittrexServiceApiV3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BittrexServiceApiV3.swift; sourceTree = "<group>"; };
+		8241389B2556E97E006C38C8 /* FavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepository.swift; sourceTree = "<group>"; };
+		824C0052255AFD8400706413 /* FiatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatService.swift; sourceTree = "<group>"; };
+		AB1CA1D9254F91920061FB88 /* Trextracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trextracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1CA1DD254F91920061FB88 /* TrextrackerWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TrextrackerWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1CA1E2254F91950061FB88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB1CA1E4254F91950061FB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1CA1E9254F91950061FB88 /* TrextrackerWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TrextrackerWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1CA1EE254F91950061FB88 /* TrextrackerWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrextrackerWatchApp.swift; sourceTree = "<group>"; };
+		AB1CA1F0254F91950061FB88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB1CA1F2254F91950061FB88 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AB1CA1F4254F91950061FB88 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		AB1CA1F6254F91950061FB88 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		AB1CA1F8254F91960061FB88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB1CA1FB254F91960061FB88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB1CA1FD254F91960061FB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1CA1FE254F91960061FB88 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AB1CA212254F9D600061FB88 /* BittrexService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BittrexService.swift; sourceTree = "<group>"; };
+		AB1CA21A254FAA8C0061FB88 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		AB1CA21F25502B760061FB88 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		AB2AFEEC2561A1AB004A4A74 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		ABDA8129256C01E70087071E /* PageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageManager.swift; sourceTree = "<group>"; };
+		ABDA812E256EFD3B0087071E /* BitcoinPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinPriceView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB1CA1E6254F91950061FB88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB1CA1D2254F91920061FB88 = {
+			isa = PBXGroup;
+			children = (
+				ABDA8129256C01E70087071E /* PageManager.swift */,
+				824C0052255AFD8400706413 /* FiatService.swift */,
+				8241389B2556E97E006C38C8 /* FavoriteRepository.swift */,
+				AB1CA21F25502B760061FB88 /* Date+Extensions.swift */,
+				AB1CA21A254FAA8C0061FB88 /* Double+Extensions.swift */,
+				AB1CA212254F9D600061FB88 /* BittrexService.swift */,
+				823A86AE25746421000758DF /* BittrexServiceApiV3.swift */,
+				AB1CA1E1254F91920061FB88 /* TrextrackerWatch WatchKit App */,
+				AB1CA1ED254F91950061FB88 /* TrextrackerWatch WatchKit Extension */,
+				AB1CA1DA254F91920061FB88 /* Products */,
+				AB8D0A4D255B6ED70049A916 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AB1CA1DA254F91920061FB88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB1CA1D9254F91920061FB88 /* Trextracker.app */,
+				AB1CA1DD254F91920061FB88 /* TrextrackerWatch WatchKit App.app */,
+				AB1CA1E9254F91950061FB88 /* TrextrackerWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB1CA1E1254F91920061FB88 /* TrextrackerWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AB1CA1E2254F91950061FB88 /* Assets.xcassets */,
+				AB1CA1E4254F91950061FB88 /* Info.plist */,
+			);
+			path = "TrextrackerWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		AB1CA1ED254F91950061FB88 /* TrextrackerWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ABDA812E256EFD3B0087071E /* BitcoinPriceView.swift */,
+				82333B112552C559006D9BE9 /* CoinListView.swift */,
+				AB1CA1EE254F91950061FB88 /* TrextrackerWatchApp.swift */,
+				AB1CA1F0254F91950061FB88 /* ContentView.swift */,
+				AB1CA1F2254F91950061FB88 /* NotificationController.swift */,
+				AB1CA1F4254F91950061FB88 /* NotificationView.swift */,
+				AB1CA1F6254F91950061FB88 /* ComplicationController.swift */,
+				AB1CA1F8254F91960061FB88 /* Assets.xcassets */,
+				AB1CA1FD254F91960061FB88 /* Info.plist */,
+				AB1CA1FE254F91960061FB88 /* PushNotificationPayload.apns */,
+				AB1CA1FA254F91960061FB88 /* Preview Content */,
+				AB2AFEEC2561A1AB004A4A74 /* SettingsView.swift */,
+			);
+			path = "TrextrackerWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AB1CA1FA254F91960061FB88 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AB1CA1FB254F91960061FB88 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB8D0A4D255B6ED70049A916 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB1CA1D8254F91920061FB88 /* TrextrackerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1CA209254F91960061FB88 /* Build configuration list for PBXNativeTarget "TrextrackerWatch" */;
+			buildPhases = (
+				AB1CA1D7254F91920061FB88 /* Resources */,
+				AB1CA208254F91960061FB88 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB1CA1E0254F91920061FB88 /* PBXTargetDependency */,
+			);
+			name = TrextrackerWatch;
+			packageProductDependencies = (
+			);
+			productName = TrextrackerWatch;
+			productReference = AB1CA1D9254F91920061FB88 /* Trextracker.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		AB1CA1DC254F91920061FB88 /* TrextrackerWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1CA205254F91960061FB88 /* Build configuration list for PBXNativeTarget "TrextrackerWatch WatchKit App" */;
+			buildPhases = (
+				AB1CA1DB254F91920061FB88 /* Resources */,
+				AB1CA204254F91960061FB88 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB1CA1EC254F91950061FB88 /* PBXTargetDependency */,
+			);
+			name = "TrextrackerWatch WatchKit App";
+			packageProductDependencies = (
+			);
+			productName = "TrextrackerWatch WatchKit App";
+			productReference = AB1CA1DD254F91920061FB88 /* TrextrackerWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AB1CA1E8254F91950061FB88 /* TrextrackerWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1CA201254F91960061FB88 /* Build configuration list for PBXNativeTarget "TrextrackerWatch WatchKit Extension" */;
+			buildPhases = (
+				AB1CA1E5254F91950061FB88 /* Sources */,
+				AB1CA1E6254F91950061FB88 /* Frameworks */,
+				AB1CA1E7254F91950061FB88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TrextrackerWatch WatchKit Extension";
+			packageProductDependencies = (
+			);
+			productName = "TrextrackerWatch WatchKit Extension";
+			productReference = AB1CA1E9254F91950061FB88 /* TrextrackerWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB1CA1D3254F91920061FB88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					AB1CA1D8254F91920061FB88 = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1220;
+					};
+					AB1CA1DC254F91920061FB88 = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1220;
+					};
+					AB1CA1E8254F91950061FB88 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = AB1CA1D6254F91920061FB88 /* Build configuration list for PBXProject "TrextrackerWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB1CA1D2254F91920061FB88;
+			packageReferences = (
+			);
+			productRefGroup = AB1CA1DA254F91920061FB88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB1CA1D8254F91920061FB88 /* TrextrackerWatch */,
+				AB1CA1DC254F91920061FB88 /* TrextrackerWatch WatchKit App */,
+				AB1CA1E8254F91950061FB88 /* TrextrackerWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB1CA1D7254F91920061FB88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1CA1DB254F91920061FB88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1CA1E3254F91950061FB88 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1CA1E7254F91950061FB88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1CA1FC254F91960061FB88 /* Preview Assets.xcassets in Resources */,
+				AB1CA1F9254F91960061FB88 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB1CA1E5254F91950061FB88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1CA1F3254F91950061FB88 /* NotificationController.swift in Sources */,
+				AB1CA22025502B760061FB88 /* Date+Extensions.swift in Sources */,
+				82F6343E257EA09300B3F61B /* ContentView.swift in Sources */,
+				82F6343D257EA09300B3F61B /* TrextrackerWatchApp.swift in Sources */,
+				AB1CA21B254FAA8C0061FB88 /* Double+Extensions.swift in Sources */,
+				AB1CA213254F9D600061FB88 /* BittrexService.swift in Sources */,
+				82F63440257EA09300B3F61B /* BitcoinPriceView.swift in Sources */,
+				AB1CA1F7254F91950061FB88 /* ComplicationController.swift in Sources */,
+				82F6343C257EA09300B3F61B /* CoinListView.swift in Sources */,
+				823A86AF25746421000758DF /* BittrexServiceApiV3.swift in Sources */,
+				8241389C2556E97E006C38C8 /* FavoriteRepository.swift in Sources */,
+				AB1CA1F5254F91950061FB88 /* NotificationView.swift in Sources */,
+				AB2AFEED2561A1AB004A4A74 /* SettingsView.swift in Sources */,
+				824C0053255AFD8400706413 /* FiatService.swift in Sources */,
+				ABDA812A256C01E70087071E /* PageManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB1CA1E0254F91920061FB88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB1CA1DC254F91920061FB88 /* TrextrackerWatch WatchKit App */;
+			targetProxy = AB1CA1DF254F91920061FB88 /* PBXContainerItemProxy */;
+		};
+		AB1CA1EC254F91950061FB88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB1CA1E8254F91950061FB88 /* TrextrackerWatch WatchKit Extension */;
+			targetProxy = AB1CA1EB254F91950061FB88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AB1CA1FF254F91960061FB88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB1CA200254F91960061FB88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB1CA202254F91960061FB88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TrextrackerWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = R4U6H5V8R8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TrextrackerWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cryptoveg.TrextrackerWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		AB1CA203254F91960061FB88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TrextrackerWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = R4U6H5V8R8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TrextrackerWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cryptoveg.TrextrackerWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		AB1CA206254F91960061FB88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4U6H5V8R8;
+				IBSC_MODULE = TrextrackerWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "TrextrackerWatch WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cryptoveg.TrextrackerWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		AB1CA207254F91960061FB88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4U6H5V8R8;
+				IBSC_MODULE = TrextrackerWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "TrextrackerWatch WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cryptoveg.TrextrackerWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		AB1CA20A254F91960061FB88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4U6H5V8R8;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cryptoveg.TrextrackerWatch;
+				PRODUCT_NAME = Trextracker;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AB1CA20B254F91960061FB88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4U6H5V8R8;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cryptoveg.TrextrackerWatch;
+				PRODUCT_NAME = Trextracker;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB1CA1D6254F91920061FB88 /* Build configuration list for PBXProject "TrextrackerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1CA1FF254F91960061FB88 /* Debug */,
+				AB1CA200254F91960061FB88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB1CA201254F91960061FB88 /* Build configuration list for PBXNativeTarget "TrextrackerWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1CA202254F91960061FB88 /* Debug */,
+				AB1CA203254F91960061FB88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB1CA205254F91960061FB88 /* Build configuration list for PBXNativeTarget "TrextrackerWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1CA206254F91960061FB88 /* Debug */,
+				AB1CA207254F91960061FB88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB1CA209254F91960061FB88 /* Build configuration list for PBXNativeTarget "TrextrackerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1CA20A254F91960061FB88 /* Debug */,
+				AB1CA20B254F91960061FB88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB1CA1D3254F91920061FB88 /* Project object */;
+}
